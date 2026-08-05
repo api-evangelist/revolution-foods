@@ -1,0 +1,30 @@
+generated: '2026-08-05'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.revolutionfoods.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Nov  1 11:56:58 2026 GMT
+  hsts: false
+- host: centro.order.revfoods.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 12 23:59:59 2026 GMT
+  hsts: true
+  hsts_max_age: 2592000
+  note: Centro customer ordering portal; root 302s to /Identity/Account/Login
+domains:
+- domain: revolutionfoods.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+- domain: revfoods.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
+  note: DMARC rua/ruf report to revolutionfoods.com addresses

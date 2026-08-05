@@ -1,17 +1,34 @@
 aid: revolution-foods
 name: Revolution Foods
-description: 'Revolution Foods is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Revolution Foods is an Oakland, California food company founded in 2006 by Kristin
+  Groos Richmond and Kirsten Saenz Tobey that manufactures and delivers nutritious, freshly prepared
+  meals to schools and senior communities. It is the largest K-12 school meal vendor in California,
+  serving more than 35 million meals a year across 800+ schools and senior centers, with programs
+  spanning district and charter school food service, after-school and summer meals, senior center
+  dining and homebound delivery. The company has been a Certified B Corporation since 2009 and a
+  Public Benefit Corporation since 2021, and reports a 100% audit pass rate across NSLP, SBP, CACFP,
+  SFSP and Title III compliance. Customers order through Centro, a login-gated web ordering portal;
+  Revolution Foods publishes no public developer program, API documentation, or machine-readable
+  specification of any kind.'
+image: https://www.revolutionfoods.com/wp-content/uploads/2025/10/revolution-foods-color.svg
 url: https://raw.githubusercontent.com/api-evangelist/revolution-foods/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-05'
 modified: '2026-08-05'
 tags:
 - Company
+- Food
+- Food Service
+- Nutrition
+- Meal Delivery
+- Education
+- K-12
+- Schools
+- Senior Services
+- B Corporation
+- Public Benefit Corporation
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,61 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/revolution-foods-domain-security.yml
+- type: LLMsTxt
+  url: llms/revolution-foods-llms.txt
 - type: Website
+  url: https://www.revolutionfoods.com/
+- type: About
+  url: https://www.revolutionfoods.com/about/
+- type: Blog
+  url: https://www.revolutionfoods.com/blog/
+- type: BlogRSS
+  url: https://www.revolutionfoods.com/feed/
+- type: PrivacyPolicy
+  url: https://www.revolutionfoods.com/privacy-policy/
+- type: Contact
+  url: https://www.revolutionfoods.com/contact/
+- type: Careers
+  url: https://recruiting.ultipro.com/REV1004REVO/JobBoard/050bac60-1fcb-4b41-b850-38dc45d48f4b/
+- type: CustomerPortal
+  name: Centro ordering portal (login required)
+  url: https://centro.order.revfoods.com/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/revolution-foods/
+- type: Facebook
+  url: https://www.facebook.com/RevolutionFoods/
+- type: Instagram
+  url: https://www.instagram.com/revolutionfoods/
+- type: YouTube
+  url: https://www.youtube.com/@revolutionfoods8340
+- type: SecondaryMarket
   url: https://forgeglobal.com/revolution-foods_stock/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Revolution Foods is a food manufacturer and meal-service operator — its product is 35 million
+    prepared school and senior meals a year, not software — and its only digital surface is Centro,
+    a customer ordering portal whose root 302s straight to an ASP.NET Identity login with no
+    /swagger, /api or /openapi.json behind it.
+  evidence:
+  - url: https://www.revolutionfoods.com/developers
+    status: 404
+  - url: https://www.revolutionfoods.com/openapi.json
+    status: 404
+  - url: https://centro.order.revfoods.com/
+    status: 302
+  - url: https://centro.order.revfoods.com/swagger/v1/swagger.json
+    status: 404
+  - url: https://www.revolutionfoods.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/revolutionfoods
+    status: 404
+  checked: '2026-08-05'
