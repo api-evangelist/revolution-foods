@@ -1,0 +1,21 @@
+{
+  "repo": "revolution-foods",
+  "feeds": [
+    {
+      "source": "https://www.revolutionfoods.com/about/",
+      "feed_url": "https://www.revolutionfoods.com/feed/",
+      "title": "",
+      "saved": 2,
+      "method": "discovered"
+    },
+    {
+      "source": "https://www.revolutionfoods.com/blog/",
+      "feed_url": "https://www.revolutionfoods.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "post_count": 2,
+  "fetched": "2026-08-06T14:08:46Z"
+}
