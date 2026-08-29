@@ -10,6 +10,17 @@ description: 'Revolution Foods is an Oakland, California food company founded in
   SFSP and Title III compliance. Customers order through Centro, a login-gated web ordering portal;
   Revolution Foods publishes no public developer program, API documentation, or machine-readable
   specification of any kind.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://www.revolutionfoods.com/wp-content/uploads/2025/10/revolution-foods-color.svg
 url: https://raw.githubusercontent.com/api-evangelist/revolution-foods/refs/heads/main/apis.yml
 x-type: company
